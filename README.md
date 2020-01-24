@@ -1,7 +1,7 @@
 ### Sistema de Gerenciamento de Eventos
 
 - Autor: Leonardo Paiva Vieira | LéoVieira™
-- Repositório: <https://github.com/leovieira/sistema-de-gerenciamento-de-eventos.git>
+- Repositório: <https://github.com/leovieira/sistema-de-gerenciamento-de-eventos>
 - Meu GitHub: <https://github.com/leovieira/>
 - Meu Site: <https://www.leovieira.dev>
 - Meu E-mail: <leonardopaiva_ipora@hotmail.com>
