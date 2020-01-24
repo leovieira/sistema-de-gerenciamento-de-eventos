@@ -1,0 +1,46 @@
+unit Unit1;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Controls.Presentation,
+
+  {$IFDEF ANDROID}
+     Android.JNI.Toast,
+     Androidapi.JNI.JavaTypes,
+     Androidapi.JNI.GraphicsContentViewText,
+     FMX.Helpers.Android,
+     Androidapi.Helpers,
+     Androidapi.NativeActivity,
+     Androidapi.JNIBridge,
+     IdURI,
+     Androidapi.Jni.Net,
+  {$ENDIF}
+
+  {$IF defined(IOS)}
+    DPF.iOS.BaseControl, DPF.iOS.BarCodeReader,
+  {$ENDIF}
+
+
+   FMX.Edit;
+
+type
+  TForm1 = class(TForm)
+    Edit1: TEdit;
+    Button1: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.fmx}
+
+end.

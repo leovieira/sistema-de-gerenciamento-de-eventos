@@ -1,0 +1,2928 @@
+object FrmMain: TFrmMain
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'SGE - Administrador'
+  ClientHeight = 640
+  ClientWidth = 380
+  Fill.Kind = Solid
+  Position = ScreenCenter
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 380.000000000000000000
+    Size.Height = 640.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = None
+    Sizes = (
+      380s
+      640s
+      380s
+      640s
+      380s
+      640s
+      380s
+      640s
+      380s
+      640s
+      380s
+      640s
+      380s
+      640s
+      380s
+      640s
+      380s
+      640s
+      380s
+      640s)
+    object TabEventos: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Eventos'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object VertScrollBox1: TVertScrollBox
+        Align = Client
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 570.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ShowScrollBars = False
+        Viewport.Width = 360.000000000000000000
+        Viewport.Height = 570.000000000000000000
+        object GroupBox1: TGroupBox
+          Align = Top
+          StyledSettings = [Other]
+          Size.Width = 360.000000000000000000
+          Size.Height = 208.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Filtrar Busca'
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF00142D
+          TabOrder = 0
+          object EdtNome: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            StyleLookup = 'Edt1Style1'
+            TabOrder = 0
+            ReturnKeyType = Search
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF0077C5
+            Position.X = 61.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 289.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = []
+          end
+          object Label3: TLabel
+            StyledSettings = []
+            Position.X = 12.000000000000000000
+            Position.Y = 38.000000000000000000
+            Size.Width = 52.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF00142D
+            Text = 'Nome:'
+            TabOrder = 3
+          end
+          object EdtCodigo: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            StyleLookup = 'Edt1Style1'
+            TabOrder = 1
+            KeyboardType = NumberPad
+            ReturnKeyType = Search
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF0077C5
+            Position.X = 68.000000000000000000
+            Position.Y = 88.000000000000000000
+            Size.Width = 153.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = []
+          end
+          object Label4: TLabel
+            StyledSettings = []
+            Position.X = 12.000000000000000000
+            Position.Y = 94.000000000000000000
+            Size.Width = 59.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF00142D
+            Text = 'C'#243'digo:'
+            TabOrder = 4
+          end
+          object BtnBuscarEvento: TRoundRect
+            Cursor = crHandPoint
+            Fill.Color = xFF0077C5
+            Position.X = 10.000000000000000000
+            Position.Y = 145.000000000000000000
+            Size.Width = 153.000000000000000000
+            Size.Height = 34.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            Stroke.Thickness = 2.000000000000000000
+            OnClick = BtnBuscarEventoClick
+            object TxtBtnBuscarEvento: TText
+              Align = Client
+              HitTest = False
+              Size.Width = 153.000000000000000000
+              Size.Height = 34.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Buscar'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claWhite
+            end
+          end
+        end
+        object StringGrid1: TStringGrid
+          Align = Top
+          CanFocus = True
+          ClipChildren = True
+          Position.Y = 208.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 353.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          RowCount = 0
+          Options = [AlternatingRowBackground, ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header]
+          Viewport.Width = 360.000000000000000000
+          Viewport.Height = 321.000000000000000000
+        end
+        object BtnCadastraEvento: TRoundRect
+          Align = Top
+          Cursor = crHandPoint
+          Fill.Color = xFF0077C5
+          Margins.Top = 25.000000000000000000
+          Position.Y = 586.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          Stroke.Thickness = 2.000000000000000000
+          OnClick = BtnCadastraEventoClick
+          object TxtBtnCadastraEvento: TText
+            Align = Client
+            HitTest = False
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Cadastrar Evento'
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+          end
+        end
+        object BtnAtualizaEvento: TRoundRect
+          Align = Top
+          Cursor = crHandPoint
+          Fill.Color = xFF0077C5
+          Margins.Top = 25.000000000000000000
+          Position.Y = 661.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          Stroke.Thickness = 2.000000000000000000
+          OnClick = BtnAtualizaEventoClick
+          object TxtBtnAtualizaEvento: TText
+            Align = Client
+            HitTest = False
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Atualizar Evento'
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+          end
+        end
+        object BtnDeletaEvento: TRoundRect
+          Align = Top
+          Cursor = crHandPoint
+          Fill.Color = xFF0077C5
+          Margins.Top = 25.000000000000000000
+          Position.Y = 736.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          Stroke.Thickness = 2.000000000000000000
+          OnClick = BtnDeletaEventoClick
+          object TxtBtnDeletaEvento: TText
+            Align = Client
+            HitTest = False
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Deletar Evento'
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+          end
+        end
+        object BtnMais: TRoundRect
+          Align = Top
+          Cursor = crHandPoint
+          Fill.Color = xFF0077C5
+          Margins.Top = 25.000000000000000000
+          Position.Y = 811.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 45.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          Stroke.Thickness = 2.000000000000000000
+          OnClick = BtnMaisClick
+          object TxtBtnMais: TText
+            Align = Client
+            HitTest = False
+            Size.Width = 360.000000000000000000
+            Size.Height = 45.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Mais'
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+          end
+        end
+      end
+      object Rectangle1: TRectangle
+        Align = Top
+        Fill.Color = xFF0077C5
+        Size.Width = 380.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        Stroke.Thickness = 0.000000000000000000
+        object BtnMenu1: TSpeedButton
+          Align = Left
+          Cursor = crHandPoint
+          IconTintColor = claWhite
+          Position.Y = 1.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'drawertoolbutton'
+          Text = 'Menu'
+        end
+        object BtnSair1: TSpeedButton
+          Align = Right
+          Cursor = crHandPoint
+          IconTintColor = claWhite
+          Position.X = 332.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'escapetoolbutton'
+          Text = 'Sair'
+          OnClick = BtnSair1Click
+        end
+        object Text1: TText
+          Align = Center
+          Size.Width = 248.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Eventos'
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+        end
+      end
+      object MultiView1: TMultiView
+        MasterButton = BtnMenu1
+        Mode = Drawer
+        ShadowOptions.Color = xFF00142D
+        Size.Width = 250.000000000000000000
+        Size.Height = 590.000000000000000000
+        Size.PlatformDefault = False
+        Visible = False
+        TabOrder = 1
+        object ListBox1: TListBox
+          Align = Client
+          Size.Width = 250.000000000000000000
+          Size.Height = 590.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'transparentlistboxstyle'
+          TabOrder = 0
+          DisableFocusEffect = True
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          Viewport.Width = 250.000000000000000000
+          Viewport.Height = 590.000000000000000000
+          object BtnEventos: TListBoxItem
+            Cursor = crHandPoint
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF00142D
+            TextSettings.HorzAlign = Center
+            StyledSettings = []
+            Size.Width = 250.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            Text = 'Eventos'
+            OnClick = BtnEventosClick
+            object Line4: TLine
+              Align = Bottom
+              LineType = Diagonal
+              Position.Y = 49.000000000000000000
+              Size.Width = 250.000000000000000000
+              Size.Height = 1.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = xFF00142D
+            end
+          end
+          object BtnAtualizaDados: TListBoxItem
+            Cursor = crHandPoint
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF00142D
+            TextSettings.HorzAlign = Center
+            StyledSettings = []
+            Position.Y = 50.000000000000000000
+            Size.Width = 250.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Atualizar Dados'
+            OnClick = BtnAtualizaDadosClick
+            object Line2: TLine
+              Align = Bottom
+              LineType = Diagonal
+              Position.Y = 49.000000000000000000
+              Size.Width = 250.000000000000000000
+              Size.Height = 1.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = xFF00142D
+            end
+          end
+          object BtnDeletaConta: TListBoxItem
+            Cursor = crHandPoint
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF00142D
+            TextSettings.HorzAlign = Center
+            StyledSettings = []
+            Position.Y = 100.000000000000000000
+            Size.Width = 250.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Deletar Conta'
+            OnClick = BtnDeletaContaClick
+            object Line3: TLine
+              Align = Bottom
+              LineType = Diagonal
+              Position.Y = 49.000000000000000000
+              Size.Width = 250.000000000000000000
+              Size.Height = 1.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = xFF00142D
+            end
+          end
+          object BtnLogout: TListBoxItem
+            Cursor = crHandPoint
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF00142D
+            TextSettings.HorzAlign = Center
+            StyledSettings = []
+            Position.Y = 150.000000000000000000
+            Size.Width = 250.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Logout'
+            OnClick = BtnLogoutClick
+            object Line1: TLine
+              Align = Bottom
+              LineType = Diagonal
+              Position.Y = 49.000000000000000000
+              Size.Width = 250.000000000000000000
+              Size.Height = 1.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Color = xFF00142D
+            end
+          end
+        end
+      end
+    end
+    object TabAtualizaDados: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Atualiza Dados'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object VertScrollBox2: TVertScrollBox
+        Align = Client
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 570.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'VertScrollBox2Style1'
+        TabOrder = 0
+        ShowScrollBars = False
+        Viewport.Width = 360.000000000000000000
+        Viewport.Height = 570.000000000000000000
+        object BtnAtualizarDados: TRoundRect
+          Align = Top
+          Cursor = crHandPoint
+          Fill.Color = xFF0077C5
+          Margins.Top = 50.000000000000000000
+          Position.Y = 279.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          OnClick = BtnAtualizarDadosClick
+          object TxtBtnAtualizarDados1: TText
+            Align = Client
+            HitTest = False
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Atualizar Dados'
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+          end
+        end
+        object EdtNomeAtualizar: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          StyleLookup = 'Edt1Style1'
+          TabOrder = 0
+          ReturnKeyType = Next
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF0077C5
+          Position.Y = 28.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = []
+        end
+        object EdtSenhaAtualizar: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          StyleLookup = 'Edt1Style1'
+          TabOrder = 3
+          ReturnKeyType = Send
+          Password = True
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF0077C5
+          Position.Y = 194.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = []
+        end
+        object EdtUsuarioAtualizar: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          StyleLookup = 'Edt1Style1'
+          TabOrder = 1
+          ReturnKeyType = Next
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF0077C5
+          Position.Y = 111.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = []
+        end
+        object Label1: TLabel
+          Align = Top
+          StyledSettings = []
+          Size.Width = 360.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF00142D
+          Text = 'Nome'
+          TabOrder = 4
+        end
+        object Label2: TLabel
+          Align = Top
+          StyledSettings = []
+          Margins.Top = 20.000000000000000000
+          Position.Y = 83.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF00142D
+          Text = 'Usu'#225'rio'
+          TabOrder = 5
+        end
+        object Label5: TLabel
+          Align = Top
+          StyledSettings = []
+          Margins.Top = 20.000000000000000000
+          Position.Y = 166.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF00142D
+          Text = 'Senha'
+          TabOrder = 6
+        end
+      end
+      object Rectangle2: TRectangle
+        Align = Top
+        Fill.Color = xFF0077C5
+        Size.Width = 380.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        Stroke.Thickness = 0.000000000000000000
+        object BtnVoltar1: TSpeedButton
+          Align = Left
+          Cursor = crHandPoint
+          IconTintColor = claWhite
+          Position.Y = 1.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'priortoolbutton'
+          Text = 'Voltar'
+          OnClick = BtnVoltar1Click
+        end
+        object BtnSair2: TSpeedButton
+          Align = Right
+          Cursor = crHandPoint
+          IconTintColor = claWhite
+          Position.X = 332.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'escapetoolbutton'
+          Text = 'Sair'
+          OnClick = BtnSair2Click
+        end
+        object Text2: TText
+          Align = Center
+          Size.Width = 248.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Atualizar Dados'
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+        end
+      end
+    end
+    object TabCadastraEvento: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Cadastra Evento'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Rectangle3: TRectangle
+        Align = Top
+        Fill.Color = xFF0077C5
+        Size.Width = 380.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        Stroke.Thickness = 0.000000000000000000
+        object BtnVoltar2: TSpeedButton
+          Align = Left
+          Cursor = crHandPoint
+          IconTintColor = claWhite
+          Position.Y = 1.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'priortoolbutton'
+          Text = 'Voltar'
+          OnClick = BtnVoltar2Click
+        end
+        object BtnSair: TSpeedButton
+          Align = Right
+          Cursor = crHandPoint
+          IconTintColor = claWhite
+          Position.X = 332.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'escapetoolbutton'
+          Text = 'Sair'
+          OnClick = BtnSairClick
+        end
+        object Text3: TText
+          Align = Center
+          Size.Width = 248.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Cadastrar Evento'
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+        end
+      end
+      object VertScrollBox3: TVertScrollBox
+        Align = Client
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 570.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'VertScrollBox2Style1'
+        TabOrder = 0
+        ShowScrollBars = False
+        Viewport.Width = 360.000000000000000000
+        Viewport.Height = 570.000000000000000000
+        object BtnCadastrarEvento: TRoundRect
+          Align = Top
+          Cursor = crHandPoint
+          Fill.Color = xFF0077C5
+          Margins.Top = 50.000000000000000000
+          Position.Y = 394.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          OnClick = BtnCadastrarEventoClick
+          object TxtBtnCadastrarEvento: TText
+            Align = Client
+            HitTest = False
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Cadastrar Evento'
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+          end
+        end
+        object EdtNomeEventoCadastrar: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          StyleLookup = 'Edt1Style1'
+          TabOrder = 0
+          ReturnKeyType = Next
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF0077C5
+          Position.Y = 28.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = []
+        end
+        object Label6: TLabel
+          Align = Top
+          StyledSettings = []
+          Size.Width = 360.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF00142D
+          Text = 'Nome'
+          TabOrder = 4
+        end
+        object Label7: TLabel
+          Align = Top
+          StyledSettings = []
+          Margins.Top = 20.000000000000000000
+          Position.Y = 83.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF00142D
+          Text = 'Descri'#231#227'o'
+          TabOrder = 5
+        end
+        object Label8: TLabel
+          Align = Top
+          StyledSettings = []
+          Margins.Top = 20.000000000000000000
+          Position.Y = 281.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF00142D
+          Text = 'Institui'#231#227'o'
+          TabOrder = 6
+        end
+        object EdtInstituicaoEventoCadastrar: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          StyleLookup = 'Edt1Style1'
+          TabOrder = 2
+          ReturnKeyType = Send
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF0077C5
+          Position.Y = 309.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = []
+        end
+        object Rectangle4: TRectangle
+          Align = Top
+          Fill.Color = claWhite
+          Margins.Top = 5.000000000000000000
+          Position.Y = 111.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 150.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF0077C5
+          Stroke.Thickness = 2.000000000000000000
+          object MmDescricaoEventoCadastrar: TMemo
+            Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+            DataDetectorTypes = []
+            StyledSettings = []
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF0077C5
+            Align = Client
+            Margins.Left = 2.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Size.Width = 356.000000000000000000
+            Size.Height = 146.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'Memo1Style1'
+            TabOrder = 0
+            Viewport.Width = 348.000000000000000000
+            Viewport.Height = 138.000000000000000000
+          end
+        end
+      end
+    end
+    object TabAtualizaEvento: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Atualiza Evento'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Rectangle5: TRectangle
+        Align = Top
+        Fill.Color = xFF0077C5
+        Size.Width = 380.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        Stroke.Thickness = 0.000000000000000000
+        object BtnVoltar3: TSpeedButton
+          Align = Left
+          Cursor = crHandPoint
+          IconTintColor = claWhite
+          Position.Y = 1.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'priortoolbutton'
+          Text = 'Voltar'
+          OnClick = BtnVoltar3Click
+        end
+        object BtnSair3: TSpeedButton
+          Align = Right
+          Cursor = crHandPoint
+          IconTintColor = claWhite
+          Position.X = 332.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'escapetoolbutton'
+          Text = 'Sair'
+          OnClick = BtnSair3Click
+        end
+        object Text4: TText
+          Align = Center
+          Size.Width = 248.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Atualizar Evento'
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+        end
+      end
+      object VertScrollBox4: TVertScrollBox
+        Align = Client
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 570.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'VertScrollBox2Style1'
+        TabOrder = 0
+        ShowScrollBars = False
+        Viewport.Width = 360.000000000000000000
+        Viewport.Height = 570.000000000000000000
+        object BtnAtualizarEvento: TRoundRect
+          Align = Top
+          Cursor = crHandPoint
+          Fill.Color = xFF0077C5
+          Margins.Top = 50.000000000000000000
+          Position.Y = 394.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          OnClick = BtnAtualizarEventoClick
+          object TxtBtnAtualizarEvento: TText
+            Align = Client
+            HitTest = False
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Atualizar Evento'
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+          end
+        end
+        object EdtNomeEventoAtualizar: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          StyleLookup = 'Edt1Style1'
+          TabOrder = 0
+          ReturnKeyType = Next
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF0077C5
+          Position.Y = 28.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = []
+        end
+        object Label9: TLabel
+          Align = Top
+          StyledSettings = []
+          Size.Width = 360.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF00142D
+          Text = 'Nome'
+          TabOrder = 4
+        end
+        object Label10: TLabel
+          Align = Top
+          StyledSettings = []
+          Margins.Top = 20.000000000000000000
+          Position.Y = 83.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF00142D
+          Text = 'Descri'#231#227'o'
+          TabOrder = 5
+        end
+        object Label11: TLabel
+          Align = Top
+          StyledSettings = []
+          Margins.Top = 20.000000000000000000
+          Position.Y = 281.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF00142D
+          Text = 'Institui'#231#227'o'
+          TabOrder = 6
+        end
+        object EdtInstituicaoEventoAtualizar: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          StyleLookup = 'Edt1Style1'
+          TabOrder = 2
+          ReturnKeyType = Send
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF0077C5
+          Position.Y = 309.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = []
+        end
+        object Rectangle6: TRectangle
+          Align = Top
+          Fill.Color = claWhite
+          Margins.Top = 5.000000000000000000
+          Position.Y = 111.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 150.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF0077C5
+          Stroke.Thickness = 2.000000000000000000
+          object MmDescricaoEventoAtualizar: TMemo
+            Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+            DataDetectorTypes = []
+            StyledSettings = []
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF0077C5
+            Align = Client
+            Margins.Left = 2.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Size.Width = 356.000000000000000000
+            Size.Height = 146.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'Memo1Style1'
+            TabOrder = 0
+            Viewport.Width = 348.000000000000000000
+            Viewport.Height = 138.000000000000000000
+          end
+        end
+      end
+    end
+    object TabMais: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Mais'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Rectangle7: TRectangle
+        Align = Top
+        Fill.Color = xFF0077C5
+        Size.Width = 380.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        Stroke.Thickness = 0.000000000000000000
+        object BtnVoltar4: TSpeedButton
+          Align = Left
+          Cursor = crHandPoint
+          IconTintColor = claWhite
+          Position.Y = 1.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'priortoolbutton'
+          Text = 'Voltar'
+          OnClick = BtnVoltar4Click
+        end
+        object BtnSair4: TSpeedButton
+          Align = Right
+          Cursor = crHandPoint
+          IconTintColor = claWhite
+          Position.X = 332.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'escapetoolbutton'
+          Text = 'Sair'
+          OnClick = BtnSair4Click
+        end
+        object Text5: TText
+          Align = Center
+          Size.Width = 248.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Mais'
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+        end
+      end
+      object VertScrollBox5: TVertScrollBox
+        Align = Client
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 570.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'VertScrollBox2Style1'
+        TabOrder = 0
+        ShowScrollBars = False
+        Viewport.Width = 360.000000000000000000
+        Viewport.Height = 570.000000000000000000
+        object ScaledLayout1: TScaledLayout
+          Align = Center
+          OriginalWidth = 360.000000000000000000
+          OriginalHeight = 367.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 367.000000000000000000
+          Size.PlatformDefault = False
+          object BtnCopiaVotantes: TRoundRect
+            Align = Top
+            Cursor = crHandPoint
+            Fill.Color = xFF0077C5
+            Margins.Top = 30.000000000000000000
+            Position.Y = 160.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            OnClick = BtnCopiaVotantesClick
+            object TxtBtnCopiaVotantes: TText
+              Align = Client
+              HitTest = False
+              Size.Width = 360.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Copiar Votantes'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claWhite
+            end
+          end
+          object BtnEquipes: TRoundRect
+            Align = Top
+            Cursor = crHandPoint
+            Fill.Color = xFF0077C5
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            OnClick = BtnEquipesClick
+            object TxtBtnEquipes: TText
+              Align = Client
+              HitTest = False
+              Size.Width = 360.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Equipes'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claWhite
+            end
+          end
+          object BtnGeraVotantes: TRoundRect
+            Align = Top
+            Cursor = crHandPoint
+            Fill.Color = xFF0077C5
+            Margins.Top = 30.000000000000000000
+            Position.Y = 80.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            OnClick = BtnGeraVotantesClick
+            object TxtBtnGeraVotantes: TText
+              Align = Client
+              HitTest = False
+              Size.Width = 360.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Gerar Votantes'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claWhite
+            end
+          end
+          object BtnVerificaGanhador: TRoundRect
+            Align = Top
+            Cursor = crHandPoint
+            Fill.Color = xFF0077C5
+            Margins.Top = 30.000000000000000000
+            Position.Y = 320.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            OnClick = BtnVerificaGanhadorClick
+            object TxtBtnVerificaGanhador: TText
+              Align = Client
+              HitTest = False
+              Size.Width = 360.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Verificar Ganhador'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claWhite
+            end
+          end
+          object BtnDeletaVotantes: TRoundRect
+            Align = Top
+            Cursor = crHandPoint
+            Fill.Color = xFF0077C5
+            Margins.Top = 30.000000000000000000
+            Position.Y = 240.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            OnClick = BtnDeletaVotantesClick
+            object TxtBtnDeletaVotantes: TText
+              Align = Client
+              HitTest = False
+              Size.Width = 360.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Deletar Votantes'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claWhite
+            end
+          end
+        end
+      end
+    end
+    object TabEquipes: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Equipes'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Rectangle10: TRectangle
+        Align = Top
+        Fill.Color = xFF0077C5
+        Size.Width = 380.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        Stroke.Thickness = 0.000000000000000000
+        object BtnVoltar5: TSpeedButton
+          Align = Left
+          Cursor = crHandPoint
+          IconTintColor = claWhite
+          Position.Y = 1.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'priortoolbutton'
+          Text = 'Voltar'
+          OnClick = BtnVoltar5Click
+        end
+        object BtnSair5: TSpeedButton
+          Align = Right
+          Cursor = crHandPoint
+          IconTintColor = claWhite
+          Position.X = 332.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'escapetoolbutton'
+          Text = 'Sair'
+          OnClick = BtnSair5Click
+        end
+        object Text7: TText
+          Align = Center
+          Size.Width = 248.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Equipes'
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+        end
+      end
+      object VertScrollBox7: TVertScrollBox
+        Align = Client
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 570.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ShowScrollBars = False
+        Viewport.Width = 360.000000000000000000
+        Viewport.Height = 570.000000000000000000
+        object BtnAtualizaEquipe: TRoundRect
+          Align = Top
+          Cursor = crHandPoint
+          Fill.Color = xFF0077C5
+          Margins.Top = 30.000000000000000000
+          Position.Y = 671.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          OnClick = BtnAtualizaEquipeClick
+          object TxtBtnAtualizaEquipe: TText
+            Align = Client
+            HitTest = False
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Atualizar Equipe'
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+          end
+        end
+        object BtnCadastraEquipe: TRoundRect
+          Align = Top
+          Cursor = crHandPoint
+          Fill.Color = xFF0077C5
+          Margins.Top = 30.000000000000000000
+          Position.Y = 591.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          OnClick = BtnCadastraEquipeClick
+          object TxtBtnCadastraEquipe: TText
+            Align = Client
+            HitTest = False
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Cadastrar Equipe'
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+          end
+        end
+        object BtnDeletaEquipe: TRoundRect
+          Align = Top
+          Cursor = crHandPoint
+          Fill.Color = xFF0077C5
+          Margins.Top = 30.000000000000000000
+          Position.Y = 751.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          OnClick = BtnDeletaEquipeClick
+          object TxtBtnDeletaEquipe: TText
+            Align = Client
+            HitTest = False
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Deletar Equipe'
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+          end
+        end
+        object GroupBox2: TGroupBox
+          Align = Top
+          StyledSettings = [Other]
+          Size.Width = 360.000000000000000000
+          Size.Height = 208.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Filtrar Busca'
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF00142D
+          TabOrder = 0
+          object EdtNomeEquipe: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            StyleLookup = 'Edt1Style1'
+            TabOrder = 0
+            ReturnKeyType = Search
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF0077C5
+            Position.X = 61.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 289.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = []
+          end
+          object Label15: TLabel
+            StyledSettings = []
+            Position.X = 12.000000000000000000
+            Position.Y = 38.000000000000000000
+            Size.Width = 52.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF00142D
+            Text = 'Nome:'
+            TabOrder = 3
+          end
+          object EdtCodigoEquipe: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            StyleLookup = 'Edt1Style1'
+            TabOrder = 1
+            KeyboardType = NumberPad
+            ReturnKeyType = Search
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF0077C5
+            Position.X = 68.000000000000000000
+            Position.Y = 88.000000000000000000
+            Size.Width = 153.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = []
+          end
+          object Label16: TLabel
+            StyledSettings = []
+            Position.X = 12.000000000000000000
+            Position.Y = 94.000000000000000000
+            Size.Width = 59.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF00142D
+            Text = 'C'#243'digo:'
+            TabOrder = 4
+          end
+          object BtnBuscarEquipe: TRoundRect
+            Cursor = crHandPoint
+            Fill.Color = xFF0077C5
+            Position.X = 10.000000000000000000
+            Position.Y = 145.000000000000000000
+            Size.Width = 153.000000000000000000
+            Size.Height = 34.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            Stroke.Thickness = 2.000000000000000000
+            OnClick = BtnBuscarEquipeClick
+            object Text8: TText
+              Align = Client
+              HitTest = False
+              Size.Width = 153.000000000000000000
+              Size.Height = 34.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Buscar'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 16.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claWhite
+            end
+          end
+        end
+        object StringGrid2: TStringGrid
+          Align = Top
+          CanFocus = True
+          ClipChildren = True
+          Position.Y = 208.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 353.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          RowCount = 0
+          Options = [AlternatingRowBackground, ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header]
+          Viewport.Width = 360.000000000000000000
+          Viewport.Height = 321.000000000000000000
+        end
+      end
+    end
+    object TabCadastraEquipe: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Cadastra Equipe'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Rectangle8: TRectangle
+        Align = Top
+        Fill.Color = xFF0077C5
+        Size.Width = 380.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        Stroke.Thickness = 0.000000000000000000
+        object BtnVoltar6: TSpeedButton
+          Align = Left
+          Cursor = crHandPoint
+          IconTintColor = claWhite
+          Position.Y = 1.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'priortoolbutton'
+          Text = 'Voltar'
+          OnClick = BtnVoltar6Click
+        end
+        object BtnSair6: TSpeedButton
+          Align = Right
+          Cursor = crHandPoint
+          IconTintColor = claWhite
+          Position.X = 332.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'escapetoolbutton'
+          Text = 'Sair'
+          OnClick = BtnSair6Click
+        end
+        object Text6: TText
+          Align = Center
+          Size.Width = 248.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Cadastrar Equipe'
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+        end
+      end
+      object VertScrollBox6: TVertScrollBox
+        Align = Client
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 570.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'VertScrollBox2Style1'
+        TabOrder = 0
+        ShowScrollBars = False
+        Viewport.Width = 360.000000000000000000
+        Viewport.Height = 570.000000000000000000
+        object BtnCadastrarEquipe: TRoundRect
+          Align = Top
+          Cursor = crHandPoint
+          Fill.Color = xFF0077C5
+          Margins.Top = 50.000000000000000000
+          Position.Y = 394.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          OnClick = BtnCadastrarEquipeClick
+          object TxtBtnCadastrarEquipe: TText
+            Align = Client
+            HitTest = False
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Cadastrar Equipe'
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+          end
+        end
+        object EdtNomeEquipeCadastrar: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          StyleLookup = 'Edt1Style1'
+          TabOrder = 0
+          ReturnKeyType = Next
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF0077C5
+          Position.Y = 28.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = []
+        end
+        object Label12: TLabel
+          Align = Top
+          StyledSettings = []
+          Size.Width = 360.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF00142D
+          Text = 'Nome'
+          TabOrder = 4
+        end
+        object Label13: TLabel
+          Align = Top
+          StyledSettings = []
+          Margins.Top = 20.000000000000000000
+          Position.Y = 83.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF00142D
+          Text = 'Descri'#231#227'o'
+          TabOrder = 5
+        end
+        object Label14: TLabel
+          Align = Top
+          StyledSettings = []
+          Margins.Top = 20.000000000000000000
+          Position.Y = 281.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF00142D
+          Text = 'Integrantes'
+          TabOrder = 6
+        end
+        object EdtIntegrantesEquipeCadastrar: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          StyleLookup = 'Edt1Style1'
+          TabOrder = 2
+          ReturnKeyType = Send
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF0077C5
+          Position.Y = 309.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = []
+        end
+        object Rectangle9: TRectangle
+          Align = Top
+          Fill.Color = claWhite
+          Margins.Top = 5.000000000000000000
+          Position.Y = 111.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 150.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF0077C5
+          Stroke.Thickness = 2.000000000000000000
+          object MmDescricaoEquipeCadastrar: TMemo
+            Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+            DataDetectorTypes = []
+            StyledSettings = []
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF0077C5
+            Align = Client
+            Margins.Left = 2.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Size.Width = 356.000000000000000000
+            Size.Height = 146.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'Memo1Style1'
+            TabOrder = 0
+            Viewport.Width = 348.000000000000000000
+            Viewport.Height = 138.000000000000000000
+          end
+        end
+      end
+    end
+    object TabAtualizaEquipe: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Atualiza Equipe'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Rectangle11: TRectangle
+        Align = Top
+        Fill.Color = xFF0077C5
+        Size.Width = 380.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        Stroke.Thickness = 0.000000000000000000
+        object BtnVoltar7: TSpeedButton
+          Align = Left
+          Cursor = crHandPoint
+          IconTintColor = claWhite
+          Position.Y = 1.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'priortoolbutton'
+          Text = 'Voltar'
+          OnClick = BtnVoltar7Click
+        end
+        object BtnSair7: TSpeedButton
+          Align = Right
+          Cursor = crHandPoint
+          IconTintColor = claWhite
+          Position.X = 332.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'escapetoolbutton'
+          Text = 'Sair'
+          OnClick = BtnSair7Click
+        end
+        object Text9: TText
+          Align = Center
+          Size.Width = 248.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Atualizar Equipe'
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+        end
+      end
+      object VertScrollBox8: TVertScrollBox
+        Align = Client
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 570.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'VertScrollBox2Style1'
+        TabOrder = 0
+        ShowScrollBars = False
+        Viewport.Width = 360.000000000000000000
+        Viewport.Height = 570.000000000000000000
+        object BtnAtualizarEquipe: TRoundRect
+          Align = Top
+          Cursor = crHandPoint
+          Fill.Color = xFF0077C5
+          Margins.Top = 50.000000000000000000
+          Position.Y = 394.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          OnClick = BtnAtualizarEquipeClick
+          object TxtBtnAtualizarEquipe: TText
+            Align = Client
+            HitTest = False
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Atualizar Equipe'
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+          end
+        end
+        object EdtNomeEquipeAtualizar: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          StyleLookup = 'Edt1Style1'
+          TabOrder = 0
+          ReturnKeyType = Next
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF0077C5
+          Position.Y = 28.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = []
+        end
+        object Label17: TLabel
+          Align = Top
+          StyledSettings = []
+          Size.Width = 360.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF00142D
+          Text = 'Nome'
+          TabOrder = 4
+        end
+        object Label18: TLabel
+          Align = Top
+          StyledSettings = []
+          Margins.Top = 20.000000000000000000
+          Position.Y = 83.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF00142D
+          Text = 'Descri'#231#227'o'
+          TabOrder = 5
+        end
+        object Label19: TLabel
+          Align = Top
+          StyledSettings = []
+          Margins.Top = 20.000000000000000000
+          Position.Y = 281.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF00142D
+          Text = 'Integrantes'
+          TabOrder = 6
+        end
+        object EdtIntegrantesEquipeAtualizar: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          StyleLookup = 'Edt1Style1'
+          TabOrder = 2
+          ReturnKeyType = Send
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF0077C5
+          Position.Y = 309.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = []
+        end
+        object Rectangle12: TRectangle
+          Align = Top
+          Fill.Color = claWhite
+          Margins.Top = 5.000000000000000000
+          Position.Y = 111.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 150.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = xFF0077C5
+          Stroke.Thickness = 2.000000000000000000
+          object MmDescricaoEquipeAtualizar: TMemo
+            Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+            DataDetectorTypes = []
+            StyledSettings = []
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF0077C5
+            Align = Client
+            Margins.Left = 2.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Size.Width = 356.000000000000000000
+            Size.Height = 146.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'Memo1Style1'
+            TabOrder = 0
+            Viewport.Width = 348.000000000000000000
+            Viewport.Height = 138.000000000000000000
+          end
+        end
+      end
+    end
+    object TabGeraVotantes: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Gera Votantes'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Rectangle13: TRectangle
+        Align = Top
+        Fill.Color = xFF0077C5
+        Size.Width = 380.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        Stroke.Thickness = 0.000000000000000000
+        object BtnVoltar8: TSpeedButton
+          Align = Left
+          Cursor = crHandPoint
+          IconTintColor = claWhite
+          Position.Y = 1.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'priortoolbutton'
+          Text = 'Voltar'
+          OnClick = BtnVoltar8Click
+        end
+        object BtnSair8: TSpeedButton
+          Align = Right
+          Cursor = crHandPoint
+          IconTintColor = claWhite
+          Position.X = 332.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'escapetoolbutton'
+          Text = 'Sair'
+          OnClick = BtnSair8Click
+        end
+        object Text10: TText
+          Align = Center
+          Size.Width = 248.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Gerar Votantes'
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+        end
+      end
+      object VertScrollBox9: TVertScrollBox
+        Align = Client
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 570.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'VertScrollBox2Style1'
+        TabOrder = 0
+        ShowScrollBars = False
+        Viewport.Width = 360.000000000000000000
+        Viewport.Height = 570.000000000000000000
+        object BtnGerarVotantes: TRoundRect
+          Align = Top
+          Cursor = crHandPoint
+          Fill.Color = xFF0077C5
+          Margins.Top = 50.000000000000000000
+          Position.Y = 113.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          OnClick = BtnGerarVotantesClick
+          object TxtBtnGerarVotantes: TText
+            Align = Client
+            HitTest = False
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Gerar Votantes'
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+          end
+        end
+        object EdtQuantidadeVotantes: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          StyleLookup = 'Edt1Style1'
+          TabOrder = 0
+          ReturnKeyType = Send
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF0077C5
+          Position.Y = 28.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = []
+        end
+        object Label20: TLabel
+          Align = Top
+          StyledSettings = []
+          Size.Width = 360.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFF00142D
+          Text = 'Quantidade'
+          TabOrder = 3
+        end
+      end
+    end
+    object TabVerificaGanhador: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Verifica Ganhador'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Rectangle14: TRectangle
+        Align = Top
+        Fill.Color = xFF0077C5
+        Size.Width = 380.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        Stroke.Thickness = 0.000000000000000000
+        object BtnVoltar9: TSpeedButton
+          Align = Left
+          Cursor = crHandPoint
+          IconTintColor = claWhite
+          Position.Y = 1.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'priortoolbutton'
+          Text = 'Voltar'
+          OnClick = BtnVoltar9Click
+        end
+        object BtnSair9: TSpeedButton
+          Align = Right
+          Cursor = crHandPoint
+          IconTintColor = claWhite
+          Position.X = 332.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'escapetoolbutton'
+          Text = 'Sair'
+          OnClick = BtnSair9Click
+        end
+        object Text11: TText
+          Align = Center
+          Size.Width = 248.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Verificar Ganhador'
+          TextSettings.Font.Family = 'Times New Roman'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+        end
+      end
+      object VertScrollBox10: TVertScrollBox
+        Align = Client
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 570.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'VertScrollBox2Style1'
+        TabOrder = 0
+        ShowScrollBars = False
+        Viewport.Width = 360.000000000000000000
+        Viewport.Height = 570.000000000000000000
+        object BtnAtualizarGanhador: TRoundRect
+          Align = Top
+          Cursor = crHandPoint
+          Fill.Color = xFF0077C5
+          Margins.Top = 50.000000000000000000
+          Position.Y = 941.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          OnClick = BtnAtualizarGanhadorClick
+          object TxtBtnAtualizarGanhador: TText
+            Align = Client
+            HitTest = False
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Atualizar'
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+          end
+        end
+        object Layout1: TLayout
+          Align = Top
+          Size.Width = 360.000000000000000000
+          Size.Height = 277.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object Text12: TText
+            Align = Top
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = '1'#186' Lugar'
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 20.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF04BB17
+          end
+          object Layout2: TLayout
+            Align = Top
+            Margins.Top = 5.000000000000000000
+            Position.Y = 55.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            object Text13: TText
+              Align = Left
+              Size.Width = 65.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Nome:'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF00142D
+              TextSettings.HorzAlign = Leading
+            end
+            object TxtNomeEquipe1: TText
+              Align = Client
+              Size.Width = 295.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF0077C5
+              TextSettings.HorzAlign = Leading
+            end
+          end
+          object Layout3: TLayout
+            Align = Top
+            Margins.Top = 5.000000000000000000
+            Position.Y = 110.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object Text14: TText
+              Align = Left
+              Size.Width = 97.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Descri'#231#227'o:'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF00142D
+              TextSettings.HorzAlign = Leading
+            end
+            object TxtDescricaoEquipe1: TText
+              Align = Client
+              Size.Width = 263.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF0077C5
+              TextSettings.HorzAlign = Leading
+            end
+          end
+          object Layout4: TLayout
+            Align = Top
+            Margins.Top = 5.000000000000000000
+            Position.Y = 165.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object Text15: TText
+              Align = Left
+              Size.Width = 110.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Integrantes:'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF00142D
+              TextSettings.HorzAlign = Leading
+            end
+            object TxtIntegrantesEquipe1: TText
+              Align = Client
+              Size.Width = 250.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF0077C5
+              TextSettings.HorzAlign = Leading
+            end
+          end
+          object Layout5: TLayout
+            Align = Top
+            Margins.Top = 5.000000000000000000
+            Position.Y = 220.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object Text16: TText
+              Align = Left
+              Size.Width = 65.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Votos:'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF00142D
+              TextSettings.HorzAlign = Leading
+            end
+            object TxtVotosEquipe1: TText
+              Align = Client
+              Size.Width = 295.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF04AF9D
+              TextSettings.HorzAlign = Leading
+            end
+          end
+        end
+        object Layout6: TLayout
+          Align = Top
+          Margins.Top = 30.000000000000000000
+          Position.Y = 307.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 277.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object Text17: TText
+            Align = Top
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = '2'#186' Lugar'
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 20.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFFE0D002
+          end
+          object Layout7: TLayout
+            Align = Top
+            Margins.Top = 5.000000000000000000
+            Position.Y = 55.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            object Text18: TText
+              Align = Left
+              Size.Width = 65.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Nome:'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF00142D
+              TextSettings.HorzAlign = Leading
+            end
+            object TxtNomeEquipe2: TText
+              Align = Client
+              Size.Width = 295.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF0077C5
+              TextSettings.HorzAlign = Leading
+            end
+          end
+          object Layout8: TLayout
+            Align = Top
+            Margins.Top = 5.000000000000000000
+            Position.Y = 110.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object Text20: TText
+              Align = Left
+              Size.Width = 97.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Descri'#231#227'o:'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF00142D
+              TextSettings.HorzAlign = Leading
+            end
+            object TxtDescricaoEquipe2: TText
+              Align = Client
+              Size.Width = 263.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF0077C5
+              TextSettings.HorzAlign = Leading
+            end
+          end
+          object Layout9: TLayout
+            Align = Top
+            Margins.Top = 5.000000000000000000
+            Position.Y = 165.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object Text22: TText
+              Align = Left
+              Size.Width = 110.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Integrantes:'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF00142D
+              TextSettings.HorzAlign = Leading
+            end
+            object TxtIntegrantesEquipe2: TText
+              Align = Client
+              Size.Width = 250.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF0077C5
+              TextSettings.HorzAlign = Leading
+            end
+          end
+          object Layout10: TLayout
+            Align = Top
+            Margins.Top = 5.000000000000000000
+            Position.Y = 220.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object Text24: TText
+              Align = Left
+              Size.Width = 65.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Votos:'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF00142D
+              TextSettings.HorzAlign = Leading
+            end
+            object TxtVotosEquipe2: TText
+              Align = Client
+              Size.Width = 295.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF04AF9D
+              TextSettings.HorzAlign = Leading
+            end
+          end
+        end
+        object Layout11: TLayout
+          Align = Top
+          Margins.Top = 30.000000000000000000
+          Position.Y = 614.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 277.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Text19: TText
+            Align = Top
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = '3'#186' Lugar'
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 20.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFFE01902
+          end
+          object Layout12: TLayout
+            Align = Top
+            Margins.Top = 5.000000000000000000
+            Position.Y = 55.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            object Text21: TText
+              Align = Left
+              Size.Width = 65.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Nome:'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF00142D
+              TextSettings.HorzAlign = Leading
+            end
+            object TxtNomeEquipe3: TText
+              Align = Client
+              Size.Width = 295.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF0077C5
+              TextSettings.HorzAlign = Leading
+            end
+          end
+          object Layout13: TLayout
+            Align = Top
+            Margins.Top = 5.000000000000000000
+            Position.Y = 110.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object Text25: TText
+              Align = Left
+              Size.Width = 97.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Descri'#231#227'o:'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF00142D
+              TextSettings.HorzAlign = Leading
+            end
+            object TxtDescricaoEquipe3: TText
+              Align = Client
+              Size.Width = 263.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF0077C5
+              TextSettings.HorzAlign = Leading
+            end
+          end
+          object Layout14: TLayout
+            Align = Top
+            Margins.Top = 5.000000000000000000
+            Position.Y = 165.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object Text27: TText
+              Align = Left
+              Size.Width = 110.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Integrantes:'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF00142D
+              TextSettings.HorzAlign = Leading
+            end
+            object TxtIntegrantesEquipe3: TText
+              Align = Client
+              Size.Width = 250.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF0077C5
+              TextSettings.HorzAlign = Leading
+            end
+          end
+          object Layout15: TLayout
+            Align = Top
+            Margins.Top = 5.000000000000000000
+            Position.Y = 220.000000000000000000
+            Size.Width = 360.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object Text29: TText
+              Align = Left
+              Size.Width = 65.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Votos:'
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF00142D
+              TextSettings.HorzAlign = Leading
+            end
+            object TxtVotosEquipe3: TText
+              Align = Client
+              Size.Width = 295.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Family = 'Times New Roman'
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF04AF9D
+              TextSettings.HorzAlign = Leading
+            end
+          end
+        end
+      end
+    end
+  end
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end
+      item
+        Platform = 'Windows 10 Desktop'
+        ResourcesBin = {
+          464D585F5354594C4520322E3501060A456474315374796C6531031D04061545
+          6474315374796C65314C6162656C5374796C6531031001005450463007544C61
+          796F757400095374796C654E616D65060A456474315374796C653105416C6967
+          6E070643656E7465720A53697A652E576964746805000000000000009607400B
+          53697A652E48656967687405000000000000008C04401453697A652E506C6174
+          666F726D44656661756C74080756697369626C6508085461624F726465720200
+          000A54526F756E645265637400095374796C654E616D65060F526F756E645265
+          6374315374796C6505416C69676E0708436F6E74656E74730A46696C6C2E436F
+          6C6F720708636C6157686974650748697454657374080A53697A652E57696474
+          6805000000000000009607400B53697A652E4865696768740500000000000000
+          8C04401453697A652E506C6174666F726D44656661756C74080C5374726F6B65
+          2E436F6C6F720709784646303037374335105374726F6B652E546869636B6E65
+          73730500000000000000800040000007544C61796F757400095374796C654E61
+          6D650607636F6E74656E7405416C69676E0706436C69656E74064C6F636B6564
+          090C4D617267696E732E4C65667405000000000000009003400B4D617267696E
+          732E546F700500000000000000C000400D4D617267696E732E52696768740500
+          0000000000009003400E4D617267696E732E426F74746F6D0500000000000000
+          C000400A53697A652E57696474680500000000000000D406400B53697A652E48
+          65696768740500000000000000E803401453697A652E506C6174666F726D4465
+          6661756C7408000007544C61796F757400095374796C654E616D650607627574
+          746F6E7305416C69676E07055269676874064C6F636B6564090B4D617267696E
+          732E546F7005000000000000008000400D4D617267696E732E52696768740500
+          0000000000008000400E4D617267696E732E426F74746F6D0500000000000000
+          8000400A506F736974696F6E2E580500000000000000F806400A506F73697469
+          6F6E2E5905000000000000008000400A53697A652E5769647468050000000000
+          0000C804400B53697A652E4865696768740500000000000000F803401453697A
+          652E506C6174666F726D44656661756C740800000C5442727573684F626A6563
+          7400095374796C654E616D65060A666F726567726F756E640B42727573682E43
+          6F6C6F720708636C61426C61636B00000C5442727573684F626A656374000953
+          74796C654E616D65060973656C656374696F6E0B42727573682E436F6C6F7207
+          0978374632413936464600000B54466F6E744F626A65637400095374796C654E
+          616D650604666F6E74000006544C6162656C00095374796C654E616D65060670
+          726F6D7074064C6F636B656409074F706163697479050000000000000080FE3F
+          0B5374796C654C6F6F6B7570061B4564745573756172696F5374796C65314C61
+          62656C5374796C65310756697369626C65080000005450463007544C61796F75
+          7400095374796C654E616D650615456474315374796C65314C6162656C537479
+          6C653105416C69676E070643656E7465720A53697A652E576964746805000000
+          000000009607400B53697A652E48656967687405000000000000008C04401453
+          697A652E506C6174666F726D44656661756C74080756697369626C6508085461
+          624F7264657202010005545465787400095374796C654E616D65060474657874
+          05416C69676E0706436C69656E74064C6F636B6564090748697454657374080A
+          53697A652E576964746805000000000000009607400B53697A652E4865696768
+          7405000000000000008C04401453697A652E506C6174666F726D44656661756C
+          7408000000}
+      end
+      item
+        Platform = 'AndroidL Light'
+        ResourcesBin = {
+          464D585F5354594C4520322E3501060A456474315374796C6531039806062245
+          6474315374796C65316C65667473656C656374696F6E706F696E747374796C65
+          310373030615456474315374796C65314C6162656C5374796C65310385010623
+          456474315374796C6531726967687473656C656374696F6E706F696E74737479
+          6C6531035E03005450463007544C61796F757400095374796C654E616D65060A
+          456474315374796C653105416C69676E070643656E7465720A53697A652E5769
+          64746805000000000000009607400B53697A652E486569676874050000000000
+          00008C04401453697A652E506C6174666F726D44656661756C74080756697369
+          626C6508085461624F7264657202000B46697865644865696768740223000A54
+          526F756E645265637400095374796C654E616D65060F526F756E645265637431
+          5374796C6505416C69676E0708436F6E74656E74730A46696C6C2E436F6C6F72
+          0708636C6157686974650748697454657374080A53697A652E57696474680500
+          0000000000009607400B53697A652E48656967687405000000000000008C0440
+          1453697A652E506C6174666F726D44656661756C74080C5374726F6B652E436F
+          6C6F720709784646303037374335105374726F6B652E546869636B6E65737305
+          00000000000000800040000007544C61796F757400095374796C654E616D6506
+          07636F6E74656E7405416C69676E0706436C69656E74064C6F636B6564090C4D
+          617267696E732E4C65667405000000000000009003400B4D617267696E732E54
+          6F7005000000000000008000400D4D617267696E732E52696768740500000000
+          0000009003400E4D617267696E732E426F74746F6D0500000000000000800040
+          0A53697A652E57696474680500000000000000D406400B53697A652E48656967
+          68740500000000000000F803401453697A652E506C6174666F726D4465666175
+          6C7408000007544C61796F757400095374796C654E616D650607627574746F6E
+          7305416C69676E07055269676874064C6F636B6564090B4D617267696E732E54
+          6F7005000000000000008000400D4D617267696E732E52696768740500000000
+          0000008000400E4D617267696E732E426F74746F6D0500000000000000800040
+          0A506F736974696F6E2E580500000000000000F806400A506F736974696F6E2E
+          5905000000000000008000400A53697A652E57696474680500000000000000C8
+          04400B53697A652E4865696768740500000000000000F803401453697A652E50
+          6C6174666F726D44656661756C740800000C54436F6C6F724F626A6563740009
+          5374796C654E616D65060A6361726574636F6C6F7205436F6C6F720709784646
+          32323232323200000C5442727573684F626A65637400095374796C654E616D65
+          060A666F726567726F756E640B42727573682E436F6C6F720709784646323232
+          32323200000C5442727573684F626A65637400095374796C654E616D65060973
+          656C656374696F6E0B42727573682E436F6C6F72070978374633334235453500
+          000B54466F6E744F626A65637400095374796C654E616D650604666F6E740946
+          6F6E742E53697A65050000000000000090034000000F5453656C656374696F6E
+          506F696E7400095374796C654E616D6506126C65667473656C656374696F6E70
+          6F696E74084772697053697A650500000000000000C000400C4772697043656E
+          7465722E580500000000000000E002400C4772697043656E7465722E59050000
+          0000000000B003C00A53697A652E57696474680500000000000000C003400B53
+          697A652E4865696768740500000000000000C003401453697A652E506C617466
+          6F726D44656661756C74080B5374796C654C6F6F6B7570062D45647455737561
+          72696F4C6F67696E5374796C65316C65667473656C656374696F6E706F696E74
+          7374796C653119546F756368546172676574457870616E73696F6E2E4C656674
+          0500000000000000E003401A546F756368546172676574457870616E73696F6E
+          2E52696768740500000000000000E003C000000F5453656C656374696F6E506F
+          696E7400095374796C654E616D650613726967687473656C656374696F6E706F
+          696E74084772697053697A650500000000000000C000400C4772697043656E74
+          65722E590500000000000000B004C00A53697A652E5769647468050000000000
+          0000C003400B53697A652E4865696768740500000000000000C003401453697A
+          652E506C6174666F726D44656661756C74080B5374796C654C6F6F6B7570062E
+          4564745573756172696F4C6F67696E5374796C6531726967687473656C656374
+          696F6E706F696E747374796C6531000006544C6162656C00095374796C654E61
+          6D65060670726F6D7074064C6F636B656409074F706163697479050000000000
+          000080FE3F0B5374796C654C6F6F6B757006204564745573756172696F4C6F67
+          696E5374796C65314C6162656C5374796C65310756697369626C650800000054
+          50463007544C61796F757400095374796C654E616D650622456474315374796C
+          65316C65667473656C656374696F6E706F696E747374796C653105416C69676E
+          070643656E7465720A53697A652E576964746805000000000000009607400B53
+          697A652E48656967687405000000000000008C04401453697A652E506C617466
+          6F726D44656661756C74080756697369626C6508085461624F7264657202010A
+          4669786564576964746802180B46697865644865696768740218000C54537479
+          6C654F626A65637400095374796C654E616D65060A6261636B67726F756E640C
+          536F757263654C6F6F6B75700617416E64726F69644C204C696768747374796C
+          652E706E670A506F736974696F6E2E580500000000000000C003C00A53697A65
+          2E57696474680500000000000000C003400B53697A652E486569676874050000
+          0000000000C003401453697A652E506C6174666F726D44656661756C74080857
+          7261704D6F6465070643656E7465720A536F757263654C696E6B0E010F536F75
+          726365526563742E4C65667405000000000000009002400E536F757263655265
+          63742E546F700500000000000000D4054010536F75726365526563742E526967
+          6874050000000000000084044011536F75726365526563742E426F74746F6D05
+          000000000000008206400001055363616C650500000000000000C0FF3F0F536F
+          75726365526563742E4C6566740500000000000000C002400E536F7572636552
+          6563742E546F70050000000000000090064010536F75726365526563742E5269
+          6768740500000000000000C0044011536F75726365526563742E426F74746F6D
+          0500000000000000B406400001055363616C6505000000000000008000400F53
+          6F75726365526563742E4C6566740500000000000000E002400E536F75726365
+          526563742E546F700500000000000000C9064010536F75726365526563742E52
+          69676874050000000000000084054011536F75726365526563742E426F74746F
+          6D0500000000000000FD06400001055363616C650500000000000000C000400F
+          536F75726365526563742E4C6566740500000000000000A003400E536F757263
+          65526563742E546F70050000000000000093074010536F75726365526563742E
+          52696768740500000000000000B8054011536F75726365526563742E426F7474
+          6F6D0500000000000000B7074000000000005450463007544C61796F75740009
+          5374796C654E616D650615456474315374796C65314C6162656C5374796C6531
+          05416C69676E070643656E7465720A53697A652E576964746805000000000000
+          009607400B53697A652E48656967687405000000000000008C04401453697A65
+          2E506C6174666F726D44656661756C74080756697369626C6508085461624F72
+          64657202020005545465787400095374796C654E616D6506047465787405416C
+          69676E0706436C69656E74064C6F636B6564090748697454657374080C4D6172
+          67696E732E4C65667405000000000000009003400D4D617267696E732E526967
+          687405000000000000009003400A53697A652E57696474680500000000000000
+          8407400B53697A652E48656967687405000000000000008C04401453697A652E
+          506C6174666F726D44656661756C7408165465787453657474696E67732E466F
+          6E742E53697A650500000000000000900340165465787453657474696E67732E
+          466F6E74436F6C6F7207097846463232323232320000005450463007544C6179
+          6F757400095374796C654E616D650623456474315374796C6531726967687473
+          656C656374696F6E706F696E747374796C653105416C69676E070643656E7465
+          720A53697A652E576964746805000000000000009607400B53697A652E486569
+          67687405000000000000008C04401453697A652E506C6174666F726D44656661
+          756C74080756697369626C6508085461624F7264657202030A46697865645769
+          64746802180B46697865644865696768740218000C545374796C654F626A6563
+          7400095374796C654E616D65060A6261636B67726F756E640C536F757263654C
+          6F6F6B75700617416E64726F69644C204C696768747374796C652E706E670A53
+          697A652E57696474680500000000000000C003400B53697A652E486569676874
+          0500000000000000C003401453697A652E506C6174666F726D44656661756C74
+          0808577261704D6F6465070643656E7465720A536F757263654C696E6B0E010F
+          536F75726365526563742E4C6566740500000000000000FC04400E536F757263
+          65526563742E546F700500000000000000D4054010536F75726365526563742E
+          52696768740500000000000000AE054011536F75726365526563742E426F7474
+          6F6D05000000000000008206400001055363616C650500000000000000C0FF3F
+          0F536F75726365526563742E4C6566740500000000000000BC05400E536F7572
+          6365526563742E546F70050000000000000090064010536F7572636552656374
+          2E5269676874050000000000000082064011536F75726365526563742E426F74
+          746F6D0500000000000000B406400001055363616C6505000000000000008000
+          400F536F75726365526563742E4C6566740500000000000000EC05400E536F75
+          726365526563742E546F700500000000000000C9064010536F75726365526563
+          742E52696768740500000000000000AA064011536F75726365526563742E426F
+          74746F6D0500000000000000FD06400001055363616C650500000000000000C0
+          00400F536F75726365526563742E4C6566740500000000000000BD06400E536F
+          75726365526563742E546F70050000000000008093074010536F757263655265
+          63742E5269676874050000000000008082074011536F75726365526563742E42
+          6F74746F6D0500000000000080B707400000000000}
+      end>
+    Left = 176
+    Top = 480
+  end
+  object FDMemTable1: TFDMemTable
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 296
+    Top = 320
+    object FDMemTable1cod_evento: TStringField
+      FieldName = 'cod_evento'
+    end
+    object FDMemTable1nome: TStringField
+      FieldName = 'nome'
+    end
+    object FDMemTable1descricao: TStringField
+      FieldName = 'descricao'
+    end
+    object FDMemTable1instituicao: TStringField
+      FieldName = 'instituicao'
+    end
+    object FDMemTable1cod_administrador: TStringField
+      FieldName = 'cod_administrador'
+    end
+    object FDMemTable1cod_avaliadores: TStringField
+      FieldName = 'cod_avaliadores'
+    end
+  end
+  object JSONDatasetAdapter1: TJSONDatasetAdapter
+    JSON.Strings = (
+      '[]')
+    Dataset = FDMemTable1
+    Left = 176
+    Top = 320
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDMemTable1
+    ScopeMappings = <>
+    Left = 56
+    Top = 320
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 57
+    Top = 401
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid1
+      Columns = <
+        item
+          MemberName = 'cod_evento'
+          Header = 'C'#243'digo'
+        end
+        item
+          MemberName = 'nome'
+          Header = 'Nome'
+          Width = 360
+        end
+        item
+          MemberName = 'descricao'
+          Header = 'Descri'#231#227'o'
+          Width = 520
+        end
+        item
+          MemberName = 'instituicao'
+          Header = 'Institui'#231#227'o'
+          Width = 360
+        end>
+    end
+    object LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      GridControl = StringGrid2
+      Columns = <
+        item
+          MemberName = 'cod_equipe'
+          Header = 'C'#243'digo'
+        end
+        item
+          MemberName = 'nome'
+          Header = 'Nome'
+          Width = 360
+        end
+        item
+          MemberName = 'descricao'
+          Header = 'Descri'#231#227'o'
+          Width = 520
+        end
+        item
+          MemberName = 'integrantes'
+          Header = 'Integrantes'
+          Width = 520
+        end
+        item
+          MemberName = 'votos'
+          Header = 'Votos'
+        end
+        item
+          MemberName = 'hash'
+          Header = 'Hash'
+          Width = 80
+        end
+        item
+          MemberName = 'cod_evento'
+          Header = 'C'#243'digo do Evento'
+          Width = 120
+        end>
+    end
+  end
+  object FDMemTable2: TFDMemTable
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 296
+    Top = 400
+  end
+  object JSONDatasetAdapter2: TJSONDatasetAdapter
+    JSON.Strings = (
+      '[]')
+    Dataset = FDMemTable2
+    Left = 176
+    Top = 400
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = FDMemTable2
+    ScopeMappings = <>
+    Left = 56
+    Top = 480
+  end
+end

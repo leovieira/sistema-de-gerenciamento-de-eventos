@@ -1,0 +1,95 @@
+unit Unit1;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Controls.Presentation,
+
+  {$IFDEF ANDROID}
+     Androidapi.JNI.JavaTypes,
+     Androidapi.JNI.GraphicsContentViewText,
+     FMX.Helpers.Android,
+     Androidapi.Helpers,
+     Androidapi.NativeActivity,
+     Androidapi.JNIBridge,
+     IdURI,
+     Androidapi.Jni.Net,
+  {$ENDIF}
+
+  {$IF defined(IOS)}
+    DPF.iOS.BaseControl, DPF.iOS.BarCodeReader,
+  {$ENDIF}
+
+
+   FMX.Edit;
+
+type
+  TForm1 = class(TForm)
+    Edit1: TEdit;
+    Button1: TButton;
+  private
+
+  {$IFDEF ANDROID}
+   Function AppBarcodeScanInstalado : Boolean;
+  {$ENDIF}
+
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.fmx}
+
+{ TForm1 }
+  {$IFDEF ANDROID}
+function TForm1.AppBarcodeScanInstalado: Boolean;
+var
+
+ Intent : JIntent;
+ Info: JApplicationInfo;
+begin
+
+
+   Try
+
+      Result := False;
+      Info := SharedActivityContext.getPackageManager.getApplicationInfo(
+            StringToJString('com.google.zxing.client.android'),0);
+
+      if Info.packageName.equals(StringToJString('com.google.zxing.client.android')) then
+      Begin
+
+        Result := True;
+
+      End;
+
+    Except on E: Exception do
+    begin
+
+
+     Try
+      Intent := TJIntent.JavaClass.init(TJIntent.JavaClass.ACTION_VIEW);
+      Intent.setData(TJnet_Uri.JavaClass.parse(StringToJString(
+        'https://play.google.com/store/apps/details?id=com.google.zxing.client.android')));
+      Intent.setPackage(StringToJString('com.android.vending'));
+      SharedActivity.startActivity(intent);
+      SharedActivity.finishActivity(0);
+      Except
+          ShowMessage('Erro ao abrir o Google Play !');
+        End;
+    End;
+
+
+  end;
+
+end;
+{$ENDIF}
+
+end.
