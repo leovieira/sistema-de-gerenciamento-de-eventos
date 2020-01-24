@@ -135,4 +135,4 @@
       A URL base é : "http://localhost/api/horas-de-brasilia.php?key={chave}".  
       Exemplo: "http://localhost/api/horas-de-brasilia.php?key=dpc0p1yim82b5s0tfk3s".  
 
-Copyright 2019 © __LéoVieira™__ - Todos os direitos reservados
+Copyright 2020 © __LéoVieira™__ - Todos os direitos reservados
